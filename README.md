@@ -19,4 +19,4 @@ Current example is inspired by https://threejs.org/examples/svg_lines.html
 - uncomment commented out plugin in babel.config.js for WEB target
 - while switching from WEB to other targets remember to comment out module-resolver plugin and to clear react-native and babel cache (in Windows works deleting contents of %appdata%/local/temp)
 
-![Android Screenshot](.\android SS.jpg)
+![Android Screenshot](https://i.ibb.co/PtrHMXz/android-SS.jpg)
