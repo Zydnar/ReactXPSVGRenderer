@@ -602,7 +602,7 @@ export default class Projector {
                                 const group = groups[g];
 
                                 material = isMultiMaterial === true
-                                    //todo lepsze rozwiązanie
+                                    //todo better soulution
                                     ? (object.material as MaterialType[])[(group.materialIndex as number)]
                                     : object.material;
 

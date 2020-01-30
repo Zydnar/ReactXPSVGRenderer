@@ -346,7 +346,6 @@ export default class SVGRenderer extends Component<SVGRendererProps, {}> impleme
 
     };
 
-    // todo żeby nie kłóciło się z reactem
     THREERender = (scene: Scene, camera: Camera) => {
         if (camera instanceof Camera === false) {
             //todo throw
@@ -476,7 +475,7 @@ export default class SVGRenderer extends Component<SVGRendererProps, {}> impleme
 
                 const x = this._vector3.x * this._svgWidthHalf;
                 const y = -this._vector3.y * this._svgHeightHalf;
-                //todo dokończyć node
+                //todo does original ever use it - remove?
                 const {node} = object;
                 node.setAttribute('transform', 'translate(' + x + ',' + y + ')');
                 this.setState({
@@ -766,7 +765,7 @@ export default class SVGRenderer extends Component<SVGRendererProps, {}> impleme
 
     };
 
-    //todo do usunięcia
+    //todo does original ever use it - remove?
     getPathNode(id: number) {
 
         if (this._svgPathPool[id] == null) {
